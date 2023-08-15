@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+        .block-1{
+            background: palegreen;
+        }
+        .block-2{
+            background: paleturquoise;
+        }
+        .block-3{
+            background: palevioletred;
+        }    
+        .block-4{
+            background: palegoldenrod;
+        }   
+        
+        </style>
+
+
+</head>
+<body>
+      <header class="d-flex justify-content-center py-3">
+            <ul class="nav nav-pills">
+              <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane-engines-fill" viewBox="0 0 16 16">
+                    <path d="M8 0c-.787 0-1.292.592-1.572 1.151A4.347 4.347 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0Z"/>
+                  </svg>
+                Главная</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-amd" viewBox="0 0 16 16">
+                    <path d="m.334 0 4.358 4.359h7.15v7.15l4.358 4.358V0H.334ZM.2 9.72l4.487-4.488v6.281h6.28L6.48 16H.2V9.72Z"/>
+                  </svg>Функции</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Ценообразование</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+            </ul>
+          </header>
+    
+
+    <div class="container">
+
+      
+    <h1 class="text-success text-center">Изучение Bootstrap</h1>
+         <!-- <div class="row"> -->
+            <!-- 1 колонка - 1/12 = 8,33% --> 
+            <!-- col (кол-во колонок максимум 12 )  -->
+            <!-- при ширине окна  lg ≥ 992px  3/12             md ≥768px    12/12   	xs<576px-->
+                <!-- <div class="col-lg-6     col-sm-2   block-1" > Block 1</div>
+                <div class="col-lg-6     col-sm-2   block-2" > Block 2</div>
+                <div class="col-lg-6     col-sm-2   block-3" > Block 3</div>
+                <div class="col-lg-6     col-sm-2   block-4" > Block 4</div>
+                
+                
+                
+        </div>
+     -->
+
+
+
+    
+
+    <div id="carouselExample" class="carousel slide w-50 ">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/shark.jpg" class="d-block w-100  img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/cat.jpg" class="d-block w-100  img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/cat2.jpg" class="d-block w-100  img-fluid" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+      </div>
+
+
+
+      
+      <div class="card" style="width: 18rem;">
+        <img src="img/shark.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">   Bootstrap</h5>
+        <p class="card-text">Lovely sharks</p>
+        <a href="https://maximumtest.ru/digital-skills" class="btn btn-success">Отправиться в космос</a>
+        </div>
+    </div> 
+
+
+
+    </div>
+
+
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Главная</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Функции</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Цены</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Ответы</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">О нас</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2023 Компания, ООО</p>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
